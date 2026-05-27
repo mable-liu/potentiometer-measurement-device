@@ -1,10 +1,10 @@
 # LEGO Block Measurement System
 
-A custom linear measurement device built from first principles — no commercial distance sensor — that measures the length of 2×4 LEGO bricks to ±1.47 mm using a rotary potentiometer, a hinged linkage, and an Arduino Uno.
+A custom linear measurement device built from first principles, no commercial distance sensor, that measures the length of 2×4 LEGO bricks to ±1.47 mm using a rotary potentiometer, a hinged linkage, and an Arduino Uno.
 
 ## The Problem
 
-Design and calibrate a measurement system for LEGO brick dimensions without using an off-the-shelf distance gauge. The system had to demonstrate a full measurement chain — sensing, signal conditioning, calibration, and uncertainty analysis — and meet a ±2 mm spec.
+Design and calibrate a measurement system for LEGO brick dimensions without using an off-the-shelf distance gauge. The system had to demonstrate a full measurement chain, sensing, signal conditioning, calibration, and uncertainty analysis, and meet a ±2 mm spec.
 
 ## How It Works
 
@@ -51,8 +51,8 @@ The calibration fit is done on-Arduino at startup using a closed-form linear lea
 
 ## What I'd Do Differently
 
-- Replace cardboard pads with rigid printed mounts — the compliance was a measurable source of variance.
-- Try a higher-resolution sensor (encoder or higher-grade pot) — the ADC was not the limiting factor; mechanical play was.
+- Replace cardboard pads with rigid printed mounts, the compliance was a measurable source of variance.
+- Try a higher-resolution sensor (encoder or higher-grade pot), the ADC was not the limiting factor; mechanical play was.
 - Fit a second-order calibration model to capture the small nonlinearity visible in the deviation plot.
 - Add a clamping or push mechanism to remove user variability in "how firmly the bed is pushed up."
 
